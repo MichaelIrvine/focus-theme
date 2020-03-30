@@ -1,0 +1,61 @@
+body.home {
+  .site-header {
+
+    .custom-logo-link {
+
+      &:focus {
+        outline: 1px solid $front-page-header;
+      }
+      
+    }
+
+    .site-title {
+      a {
+        color: $front-page-header;
+      }
+    }
+
+    .main-navigation {
+      .menu-toggle {
+        color: $front-page-header;
+      }
+
+      .menu-menu-1-container {
+        #primary-menu {
+          .menu-item {
+            a {
+              color: $front-page-header;
+              text-transform: uppercase;
+              border-bottom: 1px solid transparent;
+
+              &:focus {
+                outline: 1px solid $front-page-header;
+              }
+
+              &:hover {
+                border-bottom: 1px solid $front-page-header;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .front-page__background-image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  #focus-footer {
+    display: none;
+    
+  }
+}

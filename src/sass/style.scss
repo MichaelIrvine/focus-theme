@@ -1,0 +1,47 @@
+/*!
+Theme Name: Focus
+Theme URI: http://underscores.me/
+Author: Michael Irvine
+Author URI: http://www.michaelirvinedesign.ca
+Description: A lightweight theme for visual creators
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: focus
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Focus is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+@import "variables/variables";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "reset";
+
+/*--------------------------------------------------------------
+# a11ly
+--------------------------------------------------------------*/
+@import "a11ly";
+
+
+
+
+
+/*--------------------------------------------------------------
+# Global Elements
+--------------------------------------------------------------*/
+@import "global/global";
+/*--------------------------------------------------------------
+# Pages Layout / Styles
+--------------------------------------------------------------*/
+@import "pages/pages";

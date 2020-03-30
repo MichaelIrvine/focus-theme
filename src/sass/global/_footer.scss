@@ -1,0 +1,11 @@
+#focus-footer {
+  margin: 0 2rem 2rem 2rem;
+
+  .copyright__wrapper {
+    display: flex;
+    .copyright {
+      font-size: 0.7rem;
+      color: $lessblack;
+    }
+  }
+}

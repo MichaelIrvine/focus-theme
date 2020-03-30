@@ -1,0 +1,22 @@
+html {
+  font-size: 15px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+p, a {
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+.copy > p {
+  color: $body-copy;
+}
+
+.social-media-link {
+  color: $link;
+  text-transform: uppercase;
+}
