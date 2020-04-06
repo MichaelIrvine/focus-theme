@@ -1,5 +1,6 @@
 import './sass/style.scss';
 import './js/lazyImg';
-// import './js/lightbox';
 
-console.log("FOCUS");
+// Script for Lightbox is in Functions.php
+
+console.log('FOCUS');
