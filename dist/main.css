@@ -274,13 +274,12 @@ body.home #focus-footer {
         .page__work-wrapper .gallery-grid__lightbox .gallery-item {
           height: auto; } }
       .page__work-wrapper .gallery-grid__lightbox .gallery-item .gallery-item--image.faded {
-        opacity: 0.25;
+        opacity: 0.1;
         filter: blur(5px);
-        transition: opacity 800ms ease-in, filter 1s ease-in-out;
         pointer-events: none; }
       .page__work-wrapper .gallery-grid__lightbox .gallery-item .gallery-item--image {
         opacity: 1;
-        transition: opacity 800ms ease-in;
+        transition: opacity 800ms ease-in, filter 800ms ease-in-out;
         position: relative; }
       .page__work-wrapper .gallery-grid__lightbox .gallery-item .lazy {
         opacity: 0; }
@@ -289,7 +288,7 @@ body.home #focus-footer {
         visibility: hidden; }
       .page__work-wrapper .gallery-grid__lightbox .gallery-item .gallery-item--caption.pos-right {
         left: 100%;
-        margin-left: 100px; }
+        margin-left: 10%; }
       .page__work-wrapper .gallery-grid__lightbox .gallery-item .gallery-item--caption.pos-left {
         right: 100%;
         margin-right: 100px; }
@@ -306,8 +305,12 @@ body.home #focus-footer {
         top: 40%;
         transform: translateY(-50%);
         z-index: 1000;
-        font-size: 1.4rem;
-        border: 1px solid black; }
+        font-size: 1.4rem; }
+        .page__work-wrapper .gallery-grid__lightbox .gallery-item .gallery-item--caption .close-button {
+          border: 1px solid black;
+          border-radius: 50px;
+          font-size: 1rem;
+          margin-top: 5vh; }
   .page__work-wrapper .gallery-grid {
     display: grid;
     grid-gap: 4rem;
@@ -333,14 +336,14 @@ body.home #focus-footer {
 .page__info-wrapper {
   margin-left: 0;
   margin-bottom: 10vh;
-  padding-top: 16vh;
+  margin-top: 16vh;
   display: flex;
   flex-wrap: wrap;
   height: auto; }
   @media screen and (max-width: 768px) {
     .page__info-wrapper {
       flex-direction: column;
-      padding-top: 5vh; } }
+      margin-top: 5vh; } }
   .page__info-wrapper .page__info-col-1 {
     margin-left: 0;
     padding-top: 0.5rem;
@@ -408,26 +411,53 @@ body.home #focus-footer {
           border-bottom: 1px solid black; }
 
 .page__contact-wrapper {
-  padding-top: 10vh;
+  margin-left: 0;
+  margin-bottom: 10vh;
+  margin-top: 16vh;
   display: flex;
-  margin: 2em; }
+  height: auto; }
   @media screen and (max-width: 768px) {
+    .page__contact-wrapper {
+      margin-top: 5vh; } }
+  @media screen and (max-width: 550px) {
     .page__contact-wrapper {
       flex-direction: column; } }
   .page__contact-wrapper .page__contact-col-1 {
-    padding-top: 0.5rem;
-    flex: 1; }
-    @media screen and (max-width: 768px) {
-      .page__contact-wrapper .page__contact-col-1 .page__info--image {
-        visibility: hidden;
-        display: none; } }
+    flex: 1.25; }
+    @media screen and (max-width: 550px) {
+      .page__contact-wrapper .page__contact-col-1 {
+        width: 25%; } }
   .page__contact-wrapper .page__contact-col-2 {
     display: flex;
     flex-direction: column;
-    flex: 2; }
+    margin-left: 3rem;
+    flex: 3.5;
+    width: 85%;
+    padding: 0 3.5rem;
+    margin-left: 3rem; }
+    @media screen and (max-width: 768px) {
+      .page__contact-wrapper .page__contact-col-2 {
+        flex: 1; } }
+    @media screen and (max-width: 550px) {
+      .page__contact-wrapper .page__contact-col-2 {
+        margin-top: 5vh;
+        margin-left: 0; } }
+    @media screen and (max-width: 400px) {
+      .page__contact-wrapper .page__contact-col-2 {
+        padding: 0 1rem; } }
+    .page__contact-wrapper .page__contact-col-2 .paragraph-2__social-media-links {
+      margin-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .page__contact-wrapper .page__contact-col-2 .paragraph-2__social-media-links .social-media-link__item {
+        border-bottom: 1px solid black; }
   .page__contact-wrapper .page__contact-col-2 * {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.2;
     letter-spacing: 1px; }
+    @media screen and (max-width: 400px) {
+      .page__contact-wrapper .page__contact-col-2 * {
+        font-size: 1.2rem; } }
 

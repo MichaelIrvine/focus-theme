@@ -29,7 +29,7 @@ get_header();
         data-caption="<?php echo esc_html($image['caption']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
       <figcaption class="gallery-item--caption hidden">
         <?php echo esc_html($image['caption']); ?>
-        <button class="close-lightbox">
+        <button class="close-button close-lightbox">
           close
         </button>
       </figcaption>
