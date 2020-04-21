@@ -27,12 +27,17 @@ get_header();
     <figure class="gallery-item">
       <img class="lazy gallery-item--image" data-src="<?php echo esc_url($image['url']); ?>"
         data-caption="<?php echo esc_html($image['caption']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-      <figcaption class="gallery-item--caption hidden">
-        <?php echo esc_html($image['caption']); ?>
+      <div class="gallery-item--caption hidden">
+        <?php
+              if ($image['caption']) : ?>
+        <figcaption>
+          <?php echo esc_html($image['caption']); ?>
+        </figcaption>
+        <?php endif; ?>
         <button class="close-button close-lightbox">
           close
         </button>
-      </figcaption>
+      </div>
     </figure>
     <?php endforeach; ?>
   </div>
